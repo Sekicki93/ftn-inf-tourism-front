@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Izmena restorana</title>
+  <link rel="stylesheet" href="../../../styles/global.css" />
+</head>
+<body>
+  <h1>Izmeni restoran</h1>
+  <form id="edit-form">
+    <input type="text" id="name" placeholder="Naziv" required />
+    <textarea id="description" placeholder="Opis" required></textarea>
+    <input type="number" id="capacity" placeholder="Kapacitet" required />
+    <input type="text" id="images" placeholder="URL adrese slika (zarezom razdvojene)" />
+    <input type="number" step="0.0001" id="lat" placeholder="Geografska širina" />
+    <input type="number" step="0.0001" id="lon" placeholder="Geografska dužina" />
+    <button type="submit">Sačuvaj izmene</button>
+  </form>
+
+  <script type="module" src="edit-restaurant.ts"></script>
+</body>
+</html>
