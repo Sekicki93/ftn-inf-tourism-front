@@ -1,7 +1,10 @@
 export interface Tour {
     id: number;
-    username: string;
-    password: string;
-    role: string;
+    name: string;
+    description: string;
+    dateTime: Date;
+    maxGuests: number;
+    status: string;
+    guideId?: number;
 }
   
