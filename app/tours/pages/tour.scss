@@ -1,0 +1,93 @@
+@import '../../styles/global.scss';
+
+$primary-color: #16a318;
+$secondary-color: #fff;
+$accent-color: #012c0b;
+$background-color: #f4f4f9;
+$text-color: #333;
+$description-text: #555;
+$box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+$table-h-color:#7dbcff;
+$table-row-color-hover: #e0edfa;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    padding: 20px;
+}
+
+.main-content{
+    display: block;    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.sec-content {
+  display: block;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+button{
+    padding:10px;
+    color: white;
+    background-color: #7dbcff;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 5px 5px 10px lightgrey;
+    &:hover{
+        background-color: #007bff;
+    }
+}
+
+#sucess-msg{
+    visibility: hidden;
+}
+.tour-data {
+    margin: auto;
+    width: 80%;
+    border: 2px solid white;
+    border-collapse: collapse;
+    border-spacing: 0 5px;
+
+    .tour-data-head {
+        th {
+            background-color: $table-h-color;
+            padding: 10px;
+            margin: 5px; 
+        }
+    }
+
+    tr {
+        td {
+        padding: 10px;
+        }
+
+        &:hover {
+        background-color: $table-row-color-hover;
+        }
+    }
+
+    #lastRow{
+        background-color: #e4f0fc;
+    }
+}
+
+.form-container{
+    display: none;
+}
+
+.form-container2{
+    display: none;
+}
+
+#tourId{
+    display: none;
+}

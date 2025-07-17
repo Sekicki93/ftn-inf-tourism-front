@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="../../../dist/tours/pages/tour.css">
+    <script type="module" src="../../../dist/tours/pages/tour.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="../../index.html">Home</a></li>
+            <li class="nav-item"><a href="tour.html">Tours</a></li>
+            <li class="nav-item"><a href="restaurant.html">Restaurants</a></li>
+            <li class="nav-item" id="login"><a href="/app/users/pages/login/login.html">Login</a></li>
+            <li class="nav-item" id="logout"><a href="../../index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <table class="tour-data">
+            <thead class="tour-data-head">
+                <tr>
+                    <th>Name</th> 
+                    <th>Description</th> 
+                    <th>Capacity</th> 
+                    <th>Start Date</th>                     
+                    <th>Status</th>     
+                    <th></th>           
+                    <th></th>           
+                </tr>
+            </thead>
+            <tbody id="tour-data-body">
+            </tbody>
+        </table>
+    </section>
+
+    <section class="add-edit-content">
+        <div class="form-container">
+            <form action="">
+                <div class="form-row">                    
+                    <input id="tourId" type="text" name="tourId" required>
+                </div>                
+                <div class="form-row">
+                    <label for="tourName">Name</label>
+                    <input id="tourName" type="text" name="tourName" required>
+                </div>
+                <div class="form-row">
+                    <label for="description">Description</label>
+                    <input id="description" type="text" name="description" required>
+                </div>
+                <div class="form-row">
+                    <label for="capacity">Capacity</label>
+                    <input id="capacity" type="text" name="capacity" required>
+                </div>
+                <div class="form-row">
+                    <label for="startDate">Start date </label>
+                    <input id="startDate" type="date" value="2000-01-01" name="startDate" required>
+                </div>
+                <div class="form-row">
+                    <label for="status">Status</label>
+                    <input id="status" type="text" name="status" required>
+                </div>
+                <div class="form-row-Btn">
+                    <button type="reset" id="form-reset-Btn">Resetuj formu</button>
+                    <button type="submit" id="form-submit-Btn" >Unesi podatke</button>
+                </div>
+                <div class="form-row">
+                    <p id="error-msg"></p>
+                </div>
+            </form>
+        </div>        
+    </section>  
+
+</body>
+</html>
